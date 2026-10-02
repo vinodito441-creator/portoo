@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinzz — Portfolio</title>
+  <meta name="description" content="Personal portfolio website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <header class="topbar">
+    <div class="logo">✦</div>
+    <nav>
+      <button class="nav-link active" data-page="home">Home</button>
+      <button class="nav-link" data-page="about">About</button>
+      <button class="nav-link" data-page="portfolio">Portfolio</button>
+      <button class="nav-link" data-page="contact">Contact</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="page active-page">
+      <div class="home-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+          <h1><span>Turning Ideas</span><br>Into Reality</h1>
+          <p class="typing"><span id="typing"></span><span class="cursor">|</span></p>
+          <p class="description">
+            dimulai dari rasa penasaran, berkembang jadi passion.
+            aku suka membuat sesuatu yang terlihat keren, sederhana,
+            dan tetap nyaman digunakan.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#portfolio" data-target="portfolio">Project ↗</a>
+            <a class="btn" href="#contact" data-target="contact">Contact Me →</a>
+          </div>
+          <div class="socials">
+            <span>FIND ME</span>
+            <a href="https://www.instagram.com/vinzz_zz2?stkn=Yno3amRtZDRwcWVy" target="_blank" aria-label="Instagram">◎</a>
+            <a href="https://www.tiktok.com/@vinzz_zz04?_r=1&_t=ZS-9ADMELpsGtY" target="_blank" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+
+        <div class="music-card glass">
+          <div class="music-head">
+            <div>
+              <small>MY DAILY ROTATION</small>
+              <h2>Music & Chill</h2>
+            </div>
+            <span class="disc">◉</span>
+          </div>
+          <div class="album">
+            <div class="album-art">♫</div>
+            <div>
+              <strong>New Life</strong>
+              <p>my playlist</p>
+            </div>
+            <button class="play" id="playBtn">▶</button>
+          </div>
+          <div class="track"><b>01</b><span>Terbuang Dalam Waktu</span><em>04:41</em></div>
+          <div class="track"><b>02</b><span>Rain Dance</span><em>03:39</em></div>
+          <div class="track"><b>03</b><span>Dreams</span><em>03:12</em></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+      <div class="section-title">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>Hi, I'm <span>Vinzz</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo glass">
+          <div class="avatar"><img src="profile.jpg" alt="Foto profil Vinzz"></div>
+          <div class="photo-glow"></div>
+        </div>
+        <div class="about-text">
+          <h3>creative mind, curious soul.</h3>
+          <p>
+            aku tertarik dengan dunia digital, desain, website, dan hal-hal
+            yang berhubungan dengan teknologi. website ini dibuat sebagai
+            tempat untuk menampilkan karya dan project yang pernah dibuat.
+          </p>
+          <div class="mini-cards">
+            <div class="glass mini"><strong>01</strong><span>Creative</span></div>
+            <div class="glass mini"><strong>02</strong><span>Learning</span></div>
+            <div class="glass mini"><strong>03</strong><span>Gaming</span></div>
+          </div>
+          <a class="btn primary" href="#contact" data-target="contact">Let's Talk →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="page">
+      <div class="section-title centered">
+        <p class="eyebrow">MY WORK</p>
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="tabs glass">
+        <button class="tab active">Projects</button>
+        <button class="tab">Certificates</button>
+        <button class="tab">Awards</button>
+        <button class="tab">Tech Stack</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="project glass">
+          <div class="project-icon">⌁</div>
+          <div>
+            <small>WEB PROJECT</small>
+            <h3>Personal Website</h3>
+            <p>modern personal page dengan animasi dan responsive layout.</p>
+          </div>
+          <span>↗</span>
+        </article>
+        <article class="project glass">
+          <div class="project-icon">◫</div>
+          <div>
+            <small>UI DESIGN</small>
+            <h3>Gaming Dashboard</h3>
+            <p>dashboard interface dengan gaya dark futuristic.</p>
+          </div>
+          <span>↗</span>
+        </article>
+        <article class="project glass">
+          <div class="project-icon">✦</div>
+          <div>
+            <small>CREATIVE</small>
+            <h3>Social Media Page</h3>
+            <p>landing page untuk mengumpulkan semua social media.</p>
+          </div>
+          <span>↗</span>
+        </article>
+      </div>
+
+      <div class="stats">
+        <div class="stat glass"><strong>06</strong><small>PROJECTS</small><span>innovative solutions</span></div>
+        <div class="stat glass"><strong>05</strong><small>CERTIFICATES</small><span>skills validated</span></div>
+        <div class="stat glass"><strong>04</strong><small>AWARDS</small><span>achievements earned</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+      <div class="section-title centered">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact <span>Me</span></h2>
+      </div>
+      <div class="contact-card glass">
+        <h3>punya project atau cuma mau ngobrol?</h3>
+        <p>kirim pesan lewat salah satu platform di bawah.</p>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/vinzz_zz2?stkn=Yno3amRtZDRwcWVy" target="_blank">Instagram <span>↗</span></a>
+          <a href="https://www.tiktok.com/@vinzz_zz04?_r=1&_t=ZS-9ADMELpsGtY" target="_blank">TikTok <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Vinzz. Built with curiosity.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
